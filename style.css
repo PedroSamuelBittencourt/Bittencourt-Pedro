@@ -1,45 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-body{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    align-items: center;
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #B0B0B0;
+    margin: 0;
+    padding: 20px;
+}
+
+.bloco {
+    background-color: #B0B0B0;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+h1 {
+    color: #f4f4f4;
     text-align: center;
+}
+
+h2 {
+    color: #0D3D4D;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+}
+
+input[type="number"] {
     width: 100%;
-    justify-content: center;
-    height: 800px;
-    background-color: #033159;
-    font-family: "Titillium Web", sans-serif;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 2px 10px #000;
     
 }
-div{
-  background-color: #8C8C8C;
-  border-radius:10px ;
-  padding: 10px;
-  width: 34%;
-  height: 48%;
-  display: flex;
-  flex-direction: column;
-}
-h1{
-    font-weight: 700;
-    font-style: normal;
-}
-button{
-    background-color: black;
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to right, #176b87, #4a9bbf);
     color: white;
-    border-radius: 5px;
-    border-color:gray;
-    max-width: 75px;
-    height: 70px;
-    font-size: 15px;
-    font-weight: 700;
-    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
-input{
-    font-size: 18px;
+
+button:hover {
+    background-image: linear-gradient(to right, #4a9bbf, #176b87); /* Inverte o gradiente ao passar o mouse */
+}
+
+h3 {
+    color: #0D3D4D;
     text-align: center;
-}
-#imc{
-    margin-top: 0px;
+    margin-top: 20px;
 }

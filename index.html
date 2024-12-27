@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
 </head>
 <body>
-    <div class="bloco">
-        <h1>Calcule Seu imc </h1>
+    <form class="bloco">
+        <h1>Calcule Seu imc</h1>
         <h2>Digite seu Peso em quilogramas:</h2>
-        <input type="number" id="peso">
-        
+        <input type="number" id="peso" placeholder="Ex: 70kg" required min="1">
         <h2>Digite sua altura em metros:</h2>
-        <input type="number" id="altura">
+        <input type="number" id="altura" placeholder="Ex: 1.70m" required min="1">
         <button id="resultado">Calcule</button>
         <h3 id="imc"></h3>
-    </div>
+    </form>
     
 <script src="app.js"></script>
 </body>
