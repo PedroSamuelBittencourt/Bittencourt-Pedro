@@ -6,7 +6,7 @@ var classificacao = " "
 var num = 0
 function imc(){
     
-   
+
     var num1 = peso.value
     var num2 = altura.value
     peso.value = " "
