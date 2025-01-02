@@ -6,14 +6,13 @@ var classificacao = " "
 var num = 0
 function imc(){
     
-    
     var num1 = peso.value
     var num2 = altura.value
     // Verifica se os campos estão vazios ou se não são números válidos
+   
     if (isNaN(num1) || isNaN(num2) || num1 <= 0 || num2 <= 0) {
         return;
     }
-
 
 
     num = num1 / (num2 * num2)
@@ -31,12 +30,9 @@ function imc(){
          }else if(num>=40){
              classificacao = ", você está com Obesidade grau 3."
          }
-         document.getElementById('imc').innerHTML = "Seu imc é: "+ num.toFixed(2) + classificacao 
-    
-   
-         peso.value = " "
-         altura.value = " "
+         document.getElementById('imc').innerHTML = "Seu imc é: "+ num.toFixed(2) + classificacao
+         limparform()
 }
-document.getElementById('imc').innerHTML = "Seu imc é: "+ num + classificacao 
-btn.addEventListener('click', imc)
-// IMC = peso (em quilogramas) / (altura (em metros) * altura (em metros))
+function limparform(){
+    document.querySelector('form').reset();
+}
